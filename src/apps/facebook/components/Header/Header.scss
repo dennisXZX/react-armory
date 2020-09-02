@@ -11,6 +11,7 @@
 
 .header__left {
     display: flex;
+    align-items: center;
 
     .logo {
         height: 40px;
@@ -45,23 +46,28 @@
         .MuiSvgIcon-root {
             color: gray;
         }
-    }
 
-    .header__option:hover {
-        background-color: #eff2f5;
-        border-radius: 10px;
-        border-bottom: none;
+        &:hover {
+            background-color: #eff2f5;
+            border-radius: 10px;
+            border-bottom: none;
 
-        .MuiSvgIcon-root {
-            color: #2e81f4;
+            .MuiSvgIcon-root {
+                color: var(--color-primary);
+            }
         }
     }
 
     .header__option--active {
-        border-bottom: 4px solid #2e81f4;
+        border-bottom: 4px solid var(--color-primary);
 
         .MuiSvgIcon-root {
-            color: #2e81f4;
+            color: var(--color-primary);
+        }
+
+        &:hover {
+            border-radius: 0;
+            border-bottom: 4px solid var(--color-primary);
         }
     }
 }
