@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from './components/Header/Header';
 
-function App() {
-  return (
-    <div className="app">
-      <h1>fb clone</h1>
-    </div>
-  );
-}
+const Facebook = () => {
+    return (
+        <div className="app">
+            <Header />
+        </div>
+    );
+};
 
-export default App;
+export default Facebook;
