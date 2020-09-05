@@ -46,7 +46,7 @@ const MessageSender = () => {
                         type='submit'
                         onClick={handleSubmit}
                     >
-                        Hidden submit
+                        Submit
                     </button>
                 </form>
             </div>
