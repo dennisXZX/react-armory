@@ -5,19 +5,28 @@ import VideoCamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { useStateValue } from '../../store/StateProvider';
+import { db } from '../../firebase/firebase';
+import firebase from 'firebase';
 
 const MessageSender = () => {
     const [{ user }] = useStateValue();
-    const [input, setInput] = useState('');
-    const [imgUrl, setImageUrl] = useState('');
+    const [message, setMessage] = useState('');
+    const [imageUrl, setImageUrl] = useState('');
 
-    const handleSubmit = e => {
-        e.preventDefault();
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-        // db stuff
+        // Add the message to Firestore database
+        await db.collection('posts').add({
+            message: message,
+            image: imageUrl,
+            profilePic: user.photoURL,
+            username: user.displayName,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(), // use Firestore server time
+        });
 
         // Reset both input fields
-        setInput('');
+        setMessage('');
         setImageUrl('');
     };
 
@@ -28,15 +37,15 @@ const MessageSender = () => {
 
                 <form>
                     <input
-                        value={input}
-                        onChange={e => setInput(e.target.value)}
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
                         type="text"
                         className='messageSender__input'
                         placeholder={`What's on your mind, ${user.displayName}?`}
                     />
 
                     <input
-                        value={imgUrl}
+                        value={imageUrl}
                         onChange={e => setImageUrl(e.target.value)}
                         type="text"
                         placeholder='image URL (Optional)'
