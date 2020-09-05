@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Homepage.scss';
 
 const Homepage = () => {
     return (
-        <div>
+        <div className='homepage'>
+            <h1>React Clones</h1>
+
             <ul>
                 <li>
                     <Link to="/facebook">Facebook</Link>

@@ -13,10 +13,10 @@ ReactDOM.render(
         <Router>
             <Switch>
                 <Route path="/facebook">
-                    <Facebook/>
+                    <Facebook />
                 </Route>
                 <Route path="/airbnb">
-                    <Airbnb/>
+                    <Airbnb />
                 </Route>
                 <Route path="/hulu">
                     <Hulu />
