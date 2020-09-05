@@ -2,11 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
-import Facebook from './apps/facebook';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Facebook from './app-clones/facebook';
+import Airbnb from './app-clones/airbnb';
+import Homepage from './app-clones/homepage/Homepage';
+import Hulu from './app-clones/hulu';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Facebook />
+        <Router>
+            <Switch>
+                <Route path="/facebook">
+                    <Facebook/>
+                </Route>
+                <Route path="/airbnb">
+                    <Airbnb/>
+                </Route>
+                <Route path="/hulu">
+                    <Hulu />
+                </Route>
+                <Route path="/">
+                    <Homepage />
+                </Route>
+            </Switch>
+        </Router>
     </React.StrictMode>,
     document.getElementById('root')
 );
