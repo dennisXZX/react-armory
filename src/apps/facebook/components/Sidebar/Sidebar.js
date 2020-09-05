@@ -8,12 +8,15 @@ import ChatIcon from "@material-ui/icons/Chat"
 import StorefrontIcon from "@material-ui/icons/Storefront"
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary"
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import { useStateValue } from '../../store/StateProvider';
 
 
 const Sidebar = () => {
+    const [{ user }] = useStateValue();
+
     return (
         <div className="sidebar">
-            <SidebarRow src="https://media-exp1.licdn.com/dms/image/C4D03AQGGD4xRF4xpoA/profile-displayphoto-shrink_100_100/0?e=1604534400&v=beta&t=K4tCIl-UmXUuWb6qhgJ3H_lInMGNgUQXcmsgM6PgkR4" title="Dennis Xiao" />
+            <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center" />
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
             <SidebarRow Icon={PeopleIcon} title="Friends" />

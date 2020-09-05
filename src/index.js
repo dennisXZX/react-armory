@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
-import Facebook from './apps/facebook/App';
+import Facebook from './apps/facebook';
 
 ReactDOM.render(
     <React.StrictMode>
