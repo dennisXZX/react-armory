@@ -17,7 +17,7 @@ const MessageSender = () => {
         event.preventDefault();
 
         // Add the message to Firestore database
-        await db.collection('posts').add({
+        await db.collection('fb-posts').add({
             message: message,
             image: imageUrl,
             profilePic: user.photoURL,

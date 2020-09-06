@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import logo from '../../assets/fb_logo.png'
+import logo from '../../assets/fb-logo.png'
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
 import FlagIcon from '@material-ui/icons/Flag';

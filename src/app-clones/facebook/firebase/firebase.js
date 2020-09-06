@@ -1,13 +1,13 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBbkaKCMH8g9DOYMSiH84iTTc1GDIxf8Jw",
-    authDomain: "facebook-clone-b066a.firebaseapp.com",
-    databaseURL: "https://facebook-clone-b066a.firebaseio.com",
-    projectId: "facebook-clone-b066a",
-    storageBucket: "facebook-clone-b066a.appspot.com",
-    messagingSenderId: "1014586473086",
-    appId: "1:1014586473086:web:28ec25c58bcdd7fc1df62f"
+    apiKey: "AIzaSyAKRrVLc_ENzRRDfh7rPYazT3v8Xd3QjKY",
+    authDomain: "react-clones-6b098.firebaseapp.com",
+    databaseURL: "https://react-clones-6b098.firebaseio.com",
+    projectId: "react-clones-6b098",
+    storageBucket: "react-clones-6b098.appspot.com",
+    messagingSenderId: "655308600164",
+    appId: "1:655308600164:web:150bdba4ec2b7feb618071"
 };
 
 // Connect your app with firebase backend

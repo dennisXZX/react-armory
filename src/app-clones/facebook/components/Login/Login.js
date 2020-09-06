@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.scss'
-import logo from '../../assets/fb_logo.png'
+import logo from '../../assets/fb-logo.png'
 import Button from '@material-ui/core/Button';
 import { auth, provider } from '../../firebase/firebase';
 import { useStateValue } from '../../store/StateProvider';

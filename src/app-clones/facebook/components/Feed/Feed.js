@@ -11,7 +11,7 @@ const Feed = () => {
     // `useEffect()` will be be run once
     useEffect(() => {
         // Fetch a database snapshot from Firestore
-        db.collection('posts')
+        db.collection('fb-posts')
             .orderBy('timestamp', 'desc')
             .onSnapshot(snapshot => {
             // Map over all the documents in the `posts` collection
