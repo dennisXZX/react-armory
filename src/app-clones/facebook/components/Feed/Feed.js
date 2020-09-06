@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Feed.scss';
+import styles from './Feed.module.scss';
 import StoryReel from '../StoryReel/StoryReel';
 import MessageSender from '../MessageSender/MessageSender';
 import Post from '../Post/Post';
@@ -23,7 +23,7 @@ const Feed = () => {
     }, []);
 
     return (
-        <div className="feed">
+        <div className={styles.feed}>
             <StoryReel />
             <MessageSender />
 

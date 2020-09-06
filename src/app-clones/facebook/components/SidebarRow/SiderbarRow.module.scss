@@ -14,7 +14,12 @@
         font-weight: 600;
     }
 
-    .MuiSvgIcon-root {
+    .avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon {
         font-size: xx-large;
         color: var(--color-primary);
     }

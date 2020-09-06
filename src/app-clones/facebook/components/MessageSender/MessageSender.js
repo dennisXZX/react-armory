@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MessageSender.scss'
+import styles from './MessageSender.module.scss'
 import Avatar from '@material-ui/core/Avatar';
 import VideoCamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
@@ -31,8 +31,8 @@ const MessageSender = () => {
     };
 
     return (
-        <div className='messageSender'>
-            <div className="messageSender__top">
+        <div className={styles.messageSender}>
+            <div className={styles.messageSender__top}>
                 <Avatar src={user.photoURL} />
 
                 <form>
@@ -40,7 +40,7 @@ const MessageSender = () => {
                         value={message}
                         onChange={e => setMessage(e.target.value)}
                         type="text"
-                        className='messageSender__input'
+                        className={styles.messageSender__input}
                         placeholder={`What's on your mind, ${user.displayName}?`}
                     />
 
@@ -60,18 +60,18 @@ const MessageSender = () => {
                 </form>
             </div>
 
-            <div className="messageSender__bottom">
-                <div className="messageSender__option">
+            <div className={styles.messageSender__bottom}>
+                <div className={styles.messageSender__option}>
                     <VideoCamIcon style={{ color: 'red' }} />
                     <h3>Live Video</h3>
                 </div>
 
-                <div className="messageSender__option">
+                <div className={styles.messageSender__option}>
                     <PhotoLibraryIcon style={{ color: 'green' }} />
                     <h3>Photo/Video</h3>
                 </div>
 
-                <div className="messageSender__option">
+                <div className={styles.messageSender__option}>
                     <InsertEmoticonIcon style={{ color: 'orange' }} />
                     <h3>Feeling/Activity</h3>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.scss';
+import styles from './Header.module.scss';
 import logo from '../../assets/fb-logo.png'
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
@@ -20,38 +20,38 @@ const Header = () => {
     const [{ user }] = useStateValue();
 
     return (
-        <div className="header">
-            <div className="header__left">
-                <img src={logo} alt="Facebook Logo" className="logo" />
+        <div className={styles.header}>
+            <div className={styles.header__left}>
+                <img src={logo} alt="Facebook Logo" className={styles.logo} />
 
-                <div className="header__input">
+                <div className={styles.header__input}>
                     <SearchIcon />
                     <input type="text" placeholder="Search Facebook" />
                 </div>
             </div>
 
-            <div className="header__center">
-                <div className="header__option header__option--active">
+            <div className={styles.header__center}>
+                <div className={`${styles.header__option} ${styles['header__option--active']}`}>
                     <HomeIcon fontSize="large" />
                 </div>
-                <div className="header__option">
+                <div className={styles.header__option}>
                     <FlagIcon fontSize="large" />
                 </div>
-                <div className="header__option">
+                <div className={styles.header__option}>
                     <SubscriptionsOutlinedIcon fontSize="large" />
                 </div>
-                <div className="header__option">
+                <div className={styles.header__option}>
                     <StorefrontOutlinedIcon fontSize="large" />
                 </div>
-                <div className="header__option">
+                <div className={styles.header__option}>
                     <SupervisedUserCircleIcon fontSize="large" />
                 </div>
             </div>
 
-            <div className="header__right">
-                <div className="header__info">
+            <div className={styles.header__right}>
+                <div className={styles.header__info}>
                     <Avatar src={user.photoURL} />
-                    <h4 className="username">{user.displayName}</h4>
+                    <h4 className={styles.username}>{user.displayName}</h4>
                 </div>
 
                 <IconButton>

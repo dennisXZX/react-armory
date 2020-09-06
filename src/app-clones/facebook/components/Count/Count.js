@@ -1,11 +1,11 @@
 import React from 'react';
-import './Count.scss';
+import styles from './Count.module.scss';
 
 const Count = (props) => {
     const { count } = props;
 
     return (
-        <div className='count'>{count}</div>
+        <div className={styles.count}>{count}</div>
     );
 };
 

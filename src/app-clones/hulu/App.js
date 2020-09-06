@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 
 const App = () => {
     return (
-        <div className="app">
-            hulu
+        <div className={styles.app}>
+            App
         </div>
     );
 };

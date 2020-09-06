@@ -1,10 +1,10 @@
 import React from 'react';
-import './StoryReel.scss'
+import styles from './StoryReel.module.scss'
 import Story from '../Story/Story';
 
 const StoryReel = () => {
     return (
-        <div className='storyReel'>
+        <div className={styles.storyReel}>
             <Story
                 image='https://loremflickr.com/320/240'
                 profileSrc='https://loremflickr.com/320/240'

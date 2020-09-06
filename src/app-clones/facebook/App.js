@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Feed from './components/Feed/Feed';
@@ -11,14 +11,14 @@ const App = () => {
     const [{ user }] = useStateValue();
 
     return (
-        <div className="app">
+        <div className={styles.app}>
             {!user ? (
                 <Login />
             ) : (
                 <>
                     <Header />
 
-                    <div className="app__body">
+                    <div className={styles.app__body}>
                         <Sidebar />
                         <Feed />
                         <Widgets />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.scss'
+import styles from './Login.module.scss'
 import logo from '../../assets/fb-logo.png'
 import Button from '@material-ui/core/Button';
 import { auth, provider } from '../../firebase/firebase';
@@ -23,8 +23,8 @@ const Login = () => {
     };
 
     return (
-        <div className='login'>
-            <div className="login__logo">
+        <div className={styles.login}>
+            <div className={styles.login__logo}>
                 <img src={logo} alt="facebook logo" />
             </div>
 

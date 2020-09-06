@@ -1,5 +1,5 @@
 import React from 'react';
-import './Siderbar.scss';
+import styles from './Siderbar.module.scss';
 import SidebarRow from '../SidebarRow/SidebarRow';
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital"
 import EmojiFlagsIcon from "@material-ui/icons/EmojiFlags"
@@ -15,7 +15,7 @@ const Sidebar = () => {
     const [{ user }] = useStateValue();
 
     return (
-        <div className="sidebar">
+        <div className={styles.sidebar}>
             <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center" />
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
