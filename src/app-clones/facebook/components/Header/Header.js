@@ -14,6 +14,7 @@ import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useStateValue } from '../../store/StateProvider';
+import Count from '../Count/Count';
 
 const Header = () => {
     const [{ user }] = useStateValue();
@@ -63,6 +64,7 @@ const Header = () => {
 
                 <IconButton>
                     <NotificationsActiveIcon />
+                    <Count count={2} />
                 </IconButton>
 
                 <IconButton>
