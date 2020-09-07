@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Banner.module.scss';
 import Button from '@material-ui/core/Button';
+import Datepicker from '../Datepicker/Datepicker';
 
 const Banner = () => {
     const [showSearch, setShowSearch] = useState(false);
@@ -9,14 +10,14 @@ const Banner = () => {
         <div className={styles.banner}>
             {/* Search */}
             <div className={styles.banner__search}>
-                {showSearch && <h1>date picker</h1>}
+                {showSearch && <Datepicker />}
 
                 <Button
                     onClick={() => setShowSearch(!showSearch)}
                     className={styles.banner__searchButton}
                     variant='outlined'
                 >
-                    Search Dates
+                    {showSearch ? 'Hide' : 'Search Dates'}
                 </Button>
             </div>
 
