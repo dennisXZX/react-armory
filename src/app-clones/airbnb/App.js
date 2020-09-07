@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 import Homepage from './components/Homepage/Homepage';
 import Header from './components/Header/Header';
 
 const App = () => {
     return (
-        <div className="app">
+        <div className={styles.app}>
             <Header />
             <Homepage />
         </div>
