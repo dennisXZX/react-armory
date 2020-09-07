@@ -1,3 +1,3 @@
 ### Airbnb clone
 
-Tech: React, SASS, react-date-range, Firebase
+Tech: React, SASS, React Router, react-date-range, Firebase
