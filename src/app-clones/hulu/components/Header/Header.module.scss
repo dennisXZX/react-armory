@@ -1,0 +1,53 @@
+.header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-x: scroll;
+
+    // Hide scroll bar for Chrome, Safari and Opera
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header__icons {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        width: 100px;
+
+        > p {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: small;
+            display: none;
+        }
+    }
+
+    .header__icon:first-of-type {
+        > p {
+            display: block;
+        }
+    }
+
+    .header__icon:hover > p {
+        display: block;
+    }
+
+    > img {
+        object-fit: contain;
+        height: 80px;
+    }
+
+    .header__icons {
+
+    }
+}
