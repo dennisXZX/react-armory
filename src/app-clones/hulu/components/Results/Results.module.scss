@@ -1,6 +1,4 @@
-// `react-flip-move` library add another div to the `.results` container
-// so we need to target the div within `.results`
-.results > div {
+.results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

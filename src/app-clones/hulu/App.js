@@ -3,7 +3,7 @@ import styles from './App.module.scss';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Results from './components/Results/Results';
-import requests from './utils/requests';
+import requests from './utils/request_URLs';
 
 const App = () => {
     const [selectedOption, setSelectedOption] = useState(requests.fetchTrending);

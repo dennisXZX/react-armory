@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.scss';
-import requests from '../../utils/requests';
+import requests from '../../utils/request_URLs';
 
 const Nav = (props) => {
     const { setSelectedOption } = props;

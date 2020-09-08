@@ -1,3 +1,3 @@
 ### Hulu clone
 
-Tech: React, SASS, react-flip-move, Firebase
+Tech: React, SASS, axios, Firebase
