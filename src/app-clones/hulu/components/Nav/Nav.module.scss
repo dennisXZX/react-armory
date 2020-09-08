@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    color: white;
+    overflow-x: scroll;
+    padding: 10px;
+
+    // Hide scroll bar for Chrome, Safari and Opera
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > h2 {
+        cursor: pointer;
+        margin: 0 30px;
+        font-weight: 500;
+        opacity: 0.7;
+        transition: transform 50ms ease-out;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+}
