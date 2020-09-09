@@ -7,11 +7,15 @@ import Facebook from './app-clones/facebook';
 import Airbnb from './app-clones/airbnb';
 import Homepage from './app-clones/homepage/Homepage';
 import Hulu from './app-clones/hulu';
+import Instagram from './app-clones/instagram';
 
 ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Switch>
+                <Route path="/instagram">
+                    <Instagram />
+                </Route>
                 <Route path="/facebook">
                     <Facebook />
                 </Route>

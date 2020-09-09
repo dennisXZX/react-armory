@@ -8,15 +8,10 @@ const Homepage = () => {
             <h1>React Clones</h1>
 
             <ul>
-                <li>
-                    <Link to="/facebook">Facebook</Link>
-                </li>
-                <li>
-                    <Link to="/airbnb">Airbnb</Link>
-                </li>
-                <li>
-                    <Link to="/hulu">Hulu</Link>
-                </li>
+                <li><Link to="/instagram">Instagram</Link></li>
+                <li><Link to="/facebook">Facebook</Link></li>
+                <li><Link to="/airbnb">Airbnb</Link></li>
+                <li><Link to="/hulu">Hulu</Link></li>
             </ul>
         </div>
     );
