@@ -3,7 +3,7 @@ import styles from './Feed.module.scss';
 import StoryReel from '../StoryReel/StoryReel';
 import MessageSender from '../MessageSender/MessageSender';
 import Post from '../Post/Post';
-import { db } from '../../firebase/firebase';
+import { db } from '../../../../firebase/firebase';
 
 const Feed = () => {
     const [posts, setPosts] = useState([]);

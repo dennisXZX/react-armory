@@ -7,7 +7,7 @@ import Facebook from './app-clones/facebook';
 import Airbnb from './app-clones/airbnb';
 import Homepage from './app-clones/homepage/Homepage';
 import Hulu from './app-clones/hulu';
-import Instagram from './app-clones/instagram';
+import Instagram from './app-clones/instagram-reels';
 
 ReactDOM.render(
     <React.StrictMode>

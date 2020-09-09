@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Login.module.scss'
 import logo from '../../assets/fb-logo.png'
 import Button from '@material-ui/core/Button';
-import { auth, provider } from '../../firebase/firebase';
+import { auth, googleProvider } from '../../../../firebase/firebase';
 import { useStateValue } from '../../store/StateProvider';
 import { actionTypes } from '../../store/reducer';
 
@@ -11,7 +11,7 @@ const Login = () => {
 
     const signIn = async () => {
         try {
-            const result = await auth.signInWithPopup(provider);
+            const result = await auth.signInWithPopup(googleProvider);
 
             dispatch({
                 type: actionTypes.SET_USER,
