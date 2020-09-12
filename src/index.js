@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './index.module.scss';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Facebook from './app-clones/facebook';
@@ -9,6 +9,8 @@ import Homepage from './app-clones/homepage/Homepage';
 import Hulu from './app-clones/hulu';
 import Instagram from './app-clones/instagram-reels';
 import Card from './component-gallery/card-v1/Card';
+import Menu from './component-gallery/menu-v1/Menu';
+import Wrapper from './app-clones/homepage/components/Wrapper/Wrapper';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -28,9 +30,12 @@ ReactDOM.render(
                     <Hulu />
                 </Route>
 
-                {/* App Clones */}
+                {/* Components */}
                 <Route path="/card-v1">
-                    <Card />
+                    <Wrapper><Card /></Wrapper>
+                </Route>
+                <Route path="/menu-v1">
+                    <Wrapper><Menu /></Wrapper>
                 </Route>
 
                 {/* Default route */}

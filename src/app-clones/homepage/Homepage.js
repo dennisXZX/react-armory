@@ -21,6 +21,7 @@ const Homepage = () => {
 
                 <ul>
                     <li><Link to="/card-v1">Card v1</Link></li>
+                    <li><Link to="/menu-v1">Menu v1</Link></li>
                 </ul>
             </section>
         </div>
