@@ -1,74 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
-
-//body {
-//    padding: 0;
-//    margin: 0;
-//    background-color: #17141d;
-//    color: white;
-//    font-family: 'DM Mono', monospace;
-//}
-//
-//a {
-//    text-decoration: none;
-//}
-
-.card-list {
-    display: flex;
-    padding: 3rem;
-    overflow-x: scroll;
-    color: white;
-    font-family: 'DM Mono', monospace;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-.card-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.card-list::-webkit-scrollbar-thumb {
-    background: #201c29;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
-}
-
-.card-list::-webkit-scrollbar-track {
-    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-}
-
-
 .card {
     height: 350px;
     width: 400px;
+    // set min-width so the card would not be squeezed too much
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
+    // Use negative value to create a card overlay effect
     box-shadow: -1rem 0 3rem #000;
     display: flex;
     flex-direction: column;
-    transition: .2s;
+    // Add the transition animation
+    transition: all .2s;
     margin: 0;
     scroll-snap-align: start;
     clear: both;
     position: relative;
 }
 
-.card:focus-within ~ .card, .card:hover ~ .card {
-    transform: translateX(130px);
-}
-
+// Move the card up when it's hovered
 .card:hover {
     transform: translateY(-1rem);
 }
 
+// Use ~ selector to select all siblings after the hovered card
+// and move them to the right for 130px
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+    transform: translateX(130px);
+}
+
+// Target all the cards except the first one
 .card:not(:first-child) {
     margin-left: -130px;
 }
-
 
 .card-header {
     margin-bottom: auto;
@@ -91,6 +56,7 @@
 }
 
 .card-header h2:hover {
+    // Apply gradient to text
     background: linear-gradient(90deg, #ff8a00, #e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
@@ -117,6 +83,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    // Turn the image into black and white
     filter: grayscale(100%);
     display: block;
     overflow: hidden;
@@ -148,16 +115,14 @@
 }
 
 .tags {
-    margin: 1rem 0 2rem;
+    margin-top: 1rem;
     padding: .5rem 0 1rem;
     line-height: 2;
-    margin-bottom: 0;
 }
 
 .tags a {
     font-style: normal;
     font-weight: 700;
-    font-size: .5rem;
     color: #7a7a8c;
     text-transform: uppercase;
     font-size: .66rem;
@@ -165,6 +130,8 @@
     border-radius: 2rem;
     padding: .2rem .85rem .25rem;
     position: relative;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 .tags a:hover {

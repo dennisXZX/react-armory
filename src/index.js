@@ -8,9 +8,9 @@ import Airbnb from './app-clones/airbnb';
 import Homepage from './app-clones/homepage/Homepage';
 import Hulu from './app-clones/hulu';
 import Instagram from './app-clones/instagram-reels';
-import Card from './component-gallery/card-v1/Card';
 import Menu from './component-gallery/menu-v1/Menu';
 import Wrapper from './app-clones/homepage/components/Wrapper/Wrapper';
+import Cards from './component-gallery/card-v1/Cards';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -32,10 +32,10 @@ ReactDOM.render(
 
                 {/* Components */}
                 <Route path="/card-v1">
-                    <Wrapper><Card /></Wrapper>
+                    <Wrapper bgColor="#17141d"><Cards /></Wrapper>
                 </Route>
                 <Route path="/menu-v1">
-                    <Wrapper><Menu /></Wrapper>
+                    <Wrapper bgColor="#080b1f"><Menu /></Wrapper>
                 </Route>
 
                 {/* Default route */}
