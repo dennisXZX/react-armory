@@ -8,11 +8,13 @@ import Airbnb from './app-clones/airbnb';
 import Homepage from './app-clones/homepage/Homepage';
 import Hulu from './app-clones/hulu';
 import Instagram from './app-clones/instagram-reels';
+import Card from './component-gallery/card-v1/Card';
 
 ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Switch>
+                {/* App Clones */}
                 <Route path="/instagram">
                     <Instagram />
                 </Route>
@@ -25,6 +27,13 @@ ReactDOM.render(
                 <Route path="/hulu">
                     <Hulu />
                 </Route>
+
+                {/* App Clones */}
+                <Route path="/card-v1">
+                    <Card />
+                </Route>
+
+                {/* Default route */}
                 <Route path="/">
                     <Homepage />
                 </Route>
