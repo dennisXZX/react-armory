@@ -13,7 +13,7 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { useStateValue } from '../../store/StateProvider';
+import { useStateValue } from '../../../../utils/StateProvider';
 import Count from '../Count/Count';
 
 const Header = () => {

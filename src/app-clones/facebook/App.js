@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Feed from './components/Feed/Feed';
 import Widgets from './components/Widgets/Widgets';
 import Login from './components/Login/Login';
-import { useStateValue } from './store/StateProvider';
+import { useStateValue } from '../../utils/StateProvider';
 
 const App = () => {
     const [{ user }] = useStateValue();

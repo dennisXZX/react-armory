@@ -1,6 +1,6 @@
 import React from 'react';
 import App from './App';
-import { StateProvider } from './store/StateProvider';
+import { StateProvider } from '../../utils/StateProvider';
 import { initialState } from './store/reducer';
 import reducer from './store/reducer';
 
