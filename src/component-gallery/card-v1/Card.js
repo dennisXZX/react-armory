@@ -11,8 +11,8 @@ const Card = () => {
             </header>
 
             <div className={styles['card-author']}>
-                <a className={styles['author-avatar']} href="#">
-                    <img src={avatar}/>
+                <a className={styles['author-avatar']} href="https://dennisxiao.com/">
+                    <img src={avatar} alt="Avatar" />
                 </a>
                 <svg className={styles['half-circle']} viewBox="0 0 106 57">
                     <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -25,9 +25,9 @@ const Card = () => {
             </div>
 
             <div className={styles.tags}>
-                <a href="#">html</a>
-                <a href="#">css</a>
-                <a href="#">web-dev</a>
+                <a href="https://dennisxiao.com/">html</a>
+                <a href="https://dennisxiao.com/">css</a>
+                <a href="https://dennisxiao.com/">web-dev</a>
             </div>
         </article>
     );

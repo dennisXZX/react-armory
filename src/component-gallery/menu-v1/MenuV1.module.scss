@@ -1,0 +1,36 @@
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .marker {
+        color: white;
+        position: absolute;
+        top: 0;
+        height: 50px;
+        margin-top: -5px;
+        background-color: #2196f3;
+        border-radius: 2px;
+        transition: 0.5s;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        // Making the position relative introduces the ability to use z-index on this element
+        // do these links items would appear on top of the #marker element
+        position: relative;
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        // A tag is inline element by default
+        // so we need to make it inline-block to apply margin
+        display: inline-block;
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+}
