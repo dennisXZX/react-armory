@@ -1,0 +1,36 @@
+@keyframes left-to-right {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(100%);
+    }
+}
+
+.wrapper {
+    background: #e8e8e8;
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.wrapperCircle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.skeleton {
+    height: 100%;
+    animation: left-to-right 2s linear infinite;
+}
+
+.indicator {
+    width: 5px;
+    background: #e1e1e1;
+    height: 100%;
+    box-shadow: 0 0 5px 5px #e1e1e1;
+}

@@ -25,7 +25,6 @@
 
 // Use ~ selector to select all siblings after the hovered card
 // and move them to the right for 130px
-.card:focus-within ~ .card,
 .card:hover ~ .card {
     transform: translateX(130px);
 }

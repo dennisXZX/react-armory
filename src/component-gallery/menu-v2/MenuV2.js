@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './MenuV2.module.scss';
 
 const MenuV2 = () => {
+    const markerRef = useRef(null);
+
     useEffect(() => {
-        const marker = document.querySelector('#marker');
         const items = document.querySelectorAll('ul li a');
 
         const onMouseOverHandler = event => {
-            marker.style.left = `${event.target.offsetLeft}px`;
-            marker.style.width = `${event.target.offsetWidth}px`;
+            markerRef.current.style.left = `${event.target.offsetLeft}px`;
+            markerRef.current.style.width = `${event.target.offsetWidth}px`;
         };
 
         items.forEach(link => {
@@ -25,7 +26,7 @@ const MenuV2 = () => {
 
     return (
         <ul className={styles.menu}>
-            <div id="marker" className={styles.marker} />
+            <div className={styles.marker} ref={markerRef}/>
             <li><a href="https://dennisxiao.com/">Home</a></li>
             <li><a href="https://dennisxiao.com/">Team</a></li>
             <li><a href="https://dennisxiao.com/">About</a></li>
