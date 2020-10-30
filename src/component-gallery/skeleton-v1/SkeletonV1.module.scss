@@ -17,7 +17,7 @@
     margin: 10px;
 }
 
-.wrapperCircle{
+.wrapperCircle {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -25,7 +25,8 @@
 
 .skeleton {
     height: 100%;
-    animation: left-to-right 2s linear infinite;
+    // Use keyframes animation to achieve loading effect
+    animation: left-to-right 1s linear infinite;
 }
 
 .indicator {

@@ -25,6 +25,7 @@ const Homepage = () => {
                     <li><Link to="/menu-v1">Menu v1</Link></li>
                     <li><Link to="/menu-v2">Menu v2</Link></li>
                     <li><Link to="/skeleton-v1">Skeleton v1</Link></li>
+                    <li><Link to="/skeleton-v2">Skeleton v2</Link></li>
                 </ul>
             </section>
         </div>

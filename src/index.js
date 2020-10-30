@@ -14,6 +14,7 @@ import Cards from './component-gallery/card-v1/Cards';
 import CovidV1 from './app-clones/covid-v1';
 import MenuV2 from './component-gallery/menu-v2/MenuV2';
 import SkeletonV1 from './component-gallery/skeleton-v1/SkeletonV1';
+import SkeletonV2 from './component-gallery/skeleton-v2/SkeletonV2';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -59,6 +60,12 @@ ReactDOM.render(
                         <SkeletonV1 />
                         <SkeletonV1 />
                         <SkeletonV1 />
+                    </Wrapper>
+                </Route>
+
+                <Route path="/skeleton-v2">
+                    <Wrapper bgColor="#eee">
+                        <SkeletonV2 />
                     </Wrapper>
                 </Route>
 
