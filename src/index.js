@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Airbnb, CovidV1, Facebook, Hulu, Instagram } from "./apps";
-import { Cards, MenuV1, MenuV2, SkeletonV1 } from "./components/";
+import { Cards, MenuV1, MenuV2, SkeletonV1, TabV1 } from "./components/";
 import { Homepage, Wrapper } from "./homepage";
 import "./index.module.scss";
 
@@ -56,6 +56,12 @@ ReactDOM.render(
             <SkeletonV1 />
             <SkeletonV1 />
             <SkeletonV1 />
+          </Wrapper>
+        </Route>
+
+        <Route path="/tab-v1">
+          <Wrapper bgColor="#eee" direction="column">
+            <TabV1 titles={['Manga', 'Book', 'Game']} />
           </Wrapper>
         </Route>
 

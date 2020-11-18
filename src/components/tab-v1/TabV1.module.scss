@@ -1,0 +1,20 @@
+.tab {
+  display: flex;
+  width: 400px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.tabItem {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(228, 226, 226);
+  }
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
