@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SkeletonV1.module.scss';
+import styles from './Skeleton.module.scss';
 
 const SkeletonV1 = ({ circle }) => {
     const circleShapeClass = circle ? styles.wrapperCircle : '';

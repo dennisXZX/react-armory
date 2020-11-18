@@ -1,0 +1,16 @@
+.nav {
+  width: 400px;
+  display: flex;
+  border: 1px solid orange;
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: #dfdede;
+	}
+}

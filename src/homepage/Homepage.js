@@ -46,6 +46,9 @@ const Homepage = () => {
           <li>
             <Link to="/tab-v1">Tab v1</Link>
           </li>
+					<li>
+            <Link to="/nav-v1">Nav v1 (slot feature)</Link>
+          </li>
         </ul>
       </section>
     </div>

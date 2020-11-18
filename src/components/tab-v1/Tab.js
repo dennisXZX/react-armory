@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styles from "./TabV1.module.scss";
+import styles from "./Tab.module.scss";
 
 const TabV1 = (props) => {
   const { titles } = props;
