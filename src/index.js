@@ -2,9 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Airbnb, CovidV1, Facebook, Hulu, Instagram } from "./apps";
-import { Cards, MenuV1, MenuV2, NavBarV1, SkeletonV1, TabV1 } from "./components/";
+import {
+  Cards,
+  MenuV1,
+  MenuV2,
+  NavBarV1,
+  SkeletonV1,
+  TabV1,
+  Modal,
+} from "./components/";
 import { Homepage, Wrapper } from "./homepage";
-import "./index.module.scss";
+import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -47,6 +55,14 @@ ReactDOM.render(
         <Route path="/menu-v2">
           <Wrapper bgColor="#080b1f">
             <MenuV2 />
+          </Wrapper>
+        </Route>
+
+        <Route path="/modal">
+          <Wrapper bgColor="#eee">
+            <Modal>
+              <h1>I'm a Modal rendered in #modal div</h1>
+            </Modal>
           </Wrapper>
         </Route>
 

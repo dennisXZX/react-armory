@@ -10,19 +10,19 @@ const Homepage = () => {
 
         <ul>
           <li>
-            <Link to="/instagram">Instagram Reels</Link>
+            <Link to="/airbnb">Airbnb</Link>
+          </li>
+          <li>
+            <Link to="/covid-v1">Covid Tracker</Link>
           </li>
           <li>
             <Link to="/facebook">Facebook</Link>
           </li>
           <li>
-            <Link to="/airbnb">Airbnb</Link>
-          </li>
-          <li>
             <Link to="/hulu">Hulu</Link>
           </li>
           <li>
-            <Link to="/covid-v1">Covid v1</Link>
+            <Link to="/instagram">Instagram Reels</Link>
           </li>
         </ul>
       </section>
@@ -32,22 +32,25 @@ const Homepage = () => {
 
         <ul>
           <li>
-            <Link to="/card-v1">Card v1</Link>
+            <Link to="/card-v1">Card</Link>
           </li>
           <li>
-            <Link to="/menu-v1">Menu v1</Link>
+            <Link to="/menu-v1">Menu</Link>
           </li>
           <li>
-            <Link to="/menu-v2">Menu v2</Link>
-          </li>
-          <li>
-            <Link to="/skeleton-v1">Skeleton v1</Link>
-          </li>
-          <li>
-            <Link to="/tab-v1">Tab v1</Link>
+            <Link to="/menu-v2">Menu</Link>
           </li>
 					<li>
-            <Link to="/nav-v1">Nav v1 (slot feature)</Link>
+            <Link to="/modal">Modal</Link>
+          </li>
+					<li>
+            <Link to="/nav-v1">Navbar (slot feature)</Link>
+          </li>
+          <li>
+            <Link to="/skeleton-v1">Skeleton</Link>
+          </li>
+          <li>
+            <Link to="/tab-v1">Tabs</Link>
           </li>
         </ul>
       </section>
